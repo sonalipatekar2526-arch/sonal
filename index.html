@@ -3,99 +3,198 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sonali Patekar — Electronics & Telecommunication Engineer</title>
+  <title>Resume — Sonali Patekar</title>
   <style>
-    :root{
-      --bg:#ffffff;
-      --card:#f9fafb;
-      --text:#111827;
-      --muted:#6b7280;
-      --accent:#2563eb;
-      --link:#1d4ed8;
-      --chip:#e5e7eb;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #ffffff;
+      color: #111827;
+      line-height: 1.6;
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    a{color:var(--link);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:1000px;margin:48px auto;padding:0 24px}
-    header{
-      display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;
-      background:var(--card);
-      border:1px solid #d1d5db;border-radius:16px;padding:24px
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
     }
-    .avatar{
-      width:120px;height:120px;border-radius:50%;
-      background:#e5e7eb;
-      border:2px solid #d1d5db
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid #e5e7eb;
     }
-    .title h1{margin:0;font-size:28px;letter-spacing:.3px}
-    .title p{margin:6px 0 0;color:var(--muted)}
-    .chips{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
-    .chip{background:var(--chip);color:var(--text);padding:6px 10px;border-radius:999px;font-size:12px;border:1px solid #d1d5db}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
-    section{
-      background:var(--card);border:1px solid #d1d5db;border-radius:16px;padding:20px
+    header h1 {
+      margin: 0;
+      font-size: 32px;
     }
-    h2{margin:0 0 12px;font-size:18px;border-bottom:1px dashed #d1d5db;padding-bottom:8px}
-    h3{margin:16px 0 6px;font-size:15px}
-    .meta{color:var(--muted);font-size:13px}
-    ul{margin:8px 0 0 18px}
-    li{margin:6px 0}
-    .row{display:flex;gap:12px;flex-wrap:wrap}
-    .badge{background:#f3f4f6;border:1px solid #d1d5db;color:var(--text);padding:6px 10px;border-radius:8px;font-size:12px}
-    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .footer{margin-top:24px;color:var(--muted);font-size:12px;text-align:center}
-    .cta{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
-    .btn{
-      display:inline-flex;align-items:center;gap:8px;background:#f3f4f6;border:1px solid #d1d5db;
-      color:var(--text);padding:8px 12px;border-radius:10px;font-size:13px
+    header p {
+      margin: 5px 0;
+      color: #6b7280;
     }
-    .btn.accent{background:#2563eb;border-color:#1d4ed8;color:#ffffff}
-    .list-table{width:100%;border-collapse:collapse;margin-top:8px}
-    .list-table td{padding:6px 0;border-bottom:1px dashed #d1d5db;vertical-align:top}
-    .list-table td:first-child{color:var(--muted);width:180px}
-    .timeline{border-left:2px solid #d1d5db;margin-left:6px;padding-left:12px}
-    .timeline .item{margin:12px 0}
-    .item .when{color:var(--muted);font-size:12px}
-    .highlight{color:#2563eb}
-    @media (max-width:860px){
-      .grid{grid-template-columns:1fr}
-      header{grid-template-columns:80px 1fr}
-      .avatar{width:80px;height:80px}
+    section {
+      margin: 30px 0;
+    }
+    section h2 {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 6px;
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #2563eb;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .timeline {
+      border-left: 3px solid #e5e7eb;
+      padding-left: 15px;
+    }
+    .timeline h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .timeline p {
+      margin: 4px 0;
+      color: #6b7280;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .skills-grid ul {
+      list-style: square;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid #e5e7eb;
+      font-size: 14px;
+      color: #6b7280;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="avatar" aria-hidden="true"></div>
-      <div class="title">
-        <h1>Sonali Patekar</h1>
-        <p>Electronics & Telecommunication Engineer • DOB: 15/12/2005 • Thane, Maharashtra, India</p>
-        <div class="chips">
-          <span class="chip">Embedded Systems</span>
-          <span class="chip">Signal Processing</span>
-          <span class="chip">Wireless & IoT</span>
-          <span class="chip">PCB Design</span>
-          <span class="chip">Python & MATLAB</span>
-        </div>
-        <div class="cta">
-          <a class="btn accent" href="mailto:sonali.patekar@example.com">Email</a>
-          <a class="btn" href="tel:+91-00000-00000">Call</a>
-          <a class="btn" href="https://github.com/sonali-patekar" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/sonali-patekar" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="#">Portfolio</a>
-        </div>
-      </div>
+      <h1>Sonali Patekar</h1>
+      <p>Electronics & Telecommunication Engineer</p>
+      <p>DOB: 15/12/2005 | Thane, Maharashtra, India</p>
+      <p>Email: sonali.patekar@example.com | Phone: +91-00000-00000</p>
+      <p>GitHub: github.com/sonali-patekar | LinkedIn: linkedin.com/in/sonali-patekar</p>
     </header>
 
-    <!-- Add your resume sections here (Objective, Education, Skills, Projects, etc.) -->
+    <section>
+      <h2>Objective</h2>
+      <p>
+        Motivated Electronics & Telecommunication Engineer with strong foundations in embedded systems, signal processing, and wireless communication. 
+        Seeking opportunities to apply technical expertise in designing innovative solutions, contributing to research, and advancing modern communication technologies.
+      </p>
+    </section>
 
-    <div class="footer">
+    <section>
+      <h2>Education</h2>
+      <div class="timeline">
+        <h3>B.E. Electronics & Telecommunication Engineering</h3>
+        <p>Mumbai University | 2023–2027 (Expected)</p>
+        <ul>
+          <li>CGPA: 8.4/10</li>
+          <li>Relevant Coursework: Signals & Systems, Digital Communication, Microcontrollers, VLSI, Control Systems, Antennas, Data Networks.</li>
+        </ul>
+
+        <h3>HSC (Science)</h3>
+        <p>Maharashtra State Board | 2021–2023</p>
+        <ul>
+          <li>Subjects: Physics, Chemistry, Mathematics, Electronics</li>
+          <li>Percentage: 85%</li>
+        </ul>
+
+        <h3>SSC</h3>
+        <p>Maharashtra State Board | 2010–2021</p>
+        <ul>
+          <li>Percentage: 90%</li>
+          <li>Active member of school robotics club</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Programming & Tools</h3>
+          <ul>
+            <li>C, C++, Python, MATLAB</li>
+            <li>Embedded C, Arduino, ESP32</li>
+            <li>PCB Design (Altium, KiCAD)</li>
+            <li>Version Control (Git/GitHub)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Domain Knowledge</h3>
+          <ul>
+            <li>Signal Processing & Communication Systems</li>
+            <li>Wireless Networks & IoT</li>
+            <li>Microcontrollers & Embedded Systems</li>
+            <li>Digital Electronics & VLSI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>IoT Smart Home System:</strong> Designed a home automation system using ESP32 and MQTT protocol for controlling appliances remotely.</li>
+        <li><strong>Low-Power Sensor Node:</strong> Developed a BLE-based sensor node for environmental monitoring with edge filtering.</li>
+        <li><strong>Digital Signal Analyzer:</strong> Built a MATLAB-based tool to analyze and visualize signals in real-time.</li>
+        <li><strong>RFID Attendance System:</strong> Implemented an RFID-based attendance tracker integrated with a database.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Internships</h2>
+      <ul>
+        <li><strong>Embedded Systems Intern</strong> — TechLabs Pvt Ltd (2024)  
+          Assisted in developing firmware for ARM Cortex-M microcontrollers and tested IoT prototypes.</li>
+        <li><strong>Telecom Intern</strong> — Reliance Jio (2025)  
+          Worked on network optimization and signal testing for LTE systems.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Certified in Embedded Systems Design — Coursera</li>
+        <li>MATLAB for Engineers — MathWorks</li>
+        <li>PCB Design Fundamentals — Udemy</li>
+        <li>Python for Data Science — IBM</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <ul>
+        <li>Winner of National Level Robotics Competition (2022)</li>
+        <li>Presented paper on “IoT in Smart Cities” at IEEE Student Conference (2024)</li>
+        <li>Top 5 finalist in Hackathon on Wireless Communication (2025)</li>
+        <li>Active volunteer in Women in Engineering (WIE) initiative</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact Information</h2>
+      <p>Email: <a href="mailto:sonali.patekar@example.com">sonali.patekar@example.com</a></p>
+      <p>Phone: <a href="tel:+91-00000-00000">+91-00000-00000</a></p>
+      <p>GitHub: <a href="https://github.com/sonali-patekar" target="_blank">github.com/sonali-patekar</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/sonali-patekar" target="_blank">linkedin.com/in/sonali-patekar</a></p>
+    </section>
+
+    <footer>
       © 2026 Sonali Patekar — Electronics & Telecommunication Engineer
-    </div>
+    </footer>
   </div>
 </body>
 </html>
-
