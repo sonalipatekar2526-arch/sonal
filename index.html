@@ -1,175 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonali Patekar - Resume</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        .container {
-            max-width: 900px;
-            background: #ffffff;
-            margin: 30px auto;
-            padding: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        header {
-            text-align: center;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 15px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
-        header p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-        section {
-            margin-top: 25px;
-        }
-        section h2 {
-            font-size: 22px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-        .item {
-            margin-bottom: 15px;
-        }
-        .item h3 {
-            margin: 0;
-            font-size: 18px;
-        }
-        .item span {
-            font-size: 13px;
-            color: #666;
-        }
-        ul {
-            margin: 8px 0 0 20px;
-        }
-        .skills span {
-            display: inline-block;
-            background: #eaeaea;
-            padding: 6px 10px;
-            margin: 5px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 13px;
-            color: #777;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sonali Patekar — Electronics & Telecommunication Engineer</title>
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --accent:#22c55e;
+      --link:#60a5fa;
+      --chip:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1000px;margin:48px auto;padding:0 24px}
+    header{
+      display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;
+      background:linear-gradient(135deg,#0b1220 0%,#121a2f 60%,#0b1220 100%);
+      border:1px solid #1f2937;border-radius:16px;padding:24px
+    }
+    .avatar{
+      width:120px;height:120px;border-radius:50%;
+      background:radial-gradient(circle at 30% 30%, #1f2937, #0b1220);
+      border:2px solid #1f2937
+    }
+    .title h1{margin:0;font-size:28px;letter-spacing:.3px}
+    .title p{margin:6px 0 0;color:var(--muted)}
+    .chips{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--chip);color:var(--text);padding:6px 10px;border-radius:999px;font-size:12px;border:1px solid #1f2937}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+    section{
+      background:var(--card);border:1px solid #1f2937;border-radius:16px;padding:20px
+    }
+    h2{margin:0 0 12px;font-size:18px;border-bottom:1px dashed #1f2937;padding-bottom:8px}
+    h3{margin:16px 0 6px;font-size:15px}
+    .meta{color:var(--muted);font-size:13px}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .badge{background:#0b1220;border:1px solid #1f2937;color:var(--text);padding:6px 10px;border-radius:8px;font-size:12px}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .footer{margin-top:24px;color:var(--muted);font-size:12px;text-align:center}
+    .cta{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;background:#0b1220;border:1px solid #1f2937;
+      color:var(--text);padding:8px 12px;border-radius:10px;font-size:13px
+    }
+    .btn.accent{background:#0d1b2a;border-color:#1f2937;color:#a7f3d0}
+    .list-table{width:100%;border-collapse:collapse;margin-top:8px}
+    .list-table td{padding:6px 0;border-bottom:1px dashed #1f2937;vertical-align:top}
+    .list-table td:first-child{color:var(--muted);width:180px}
+    .timeline{border-left:2px solid #1f2937;margin-left:6px;padding-left:12px}
+    .timeline .item{margin:12px 0}
+    .item .when{color:var(--muted);font-size:12px}
+    .highlight{color:#a7f3d0}
+    @media (max-width:860px){
+      .grid{grid-template-columns:1fr}
+      header{grid-template-columns:80px 1fr}
+      .avatar{width:80px;height:80px}
+    }
+  </style>
 </head>
 <body>
-
-<div class="container">
+  <div class="container">
     <header>
+      <div class="avatar" aria-hidden="true"></div>
+      <div class="title">
         <h1>Sonali Patekar</h1>
-        <p>Email: sonalipatekar@gmail.com | Phone: +91 9XXXXXXXXX</p>
-        <p>
-            GitHub: github.com/sonalipatekar |
-            LinkedIn: linkedin.com/in/sonalipatekar
-        </p>
+        <p>Electronics & Telecommunication Engineer • DOB: 15/12/2005 • Thane, Maharashtra, India</p>
+        <div class="chips">
+          <span class="chip">Embedded Systems</span>
+          <span class="chip">Signal Processing</span>
+          <span class="chip">Wireless & IoT</span>
+          <span class="chip">PCB Design</span>
+          <span class="chip">Python & MATLAB</span>
+        </div>
+        <div class="cta">
+          <a class="btn accent" href="mailto:sonali.patekar@example.com">Email</a>
+          <a class="btn" href="tel:+91-00000-00000">Call</a>
+          <a class="btn" href="https://github.com/sonali-patekar" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/sonali-patekar" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="#">Portfolio</a>
+        </div>
+      </div>
     </header>
 
-    <section>
-        <h2>Professional Summary</h2>
+    <div class="grid">
+      <!-- Left column -->
+      <section>
+        <h2>Objective</h2>
         <p>
-            Engineering graduate with a strong foundation in computer science and web
-            development. Skilled in building responsive web applications and eager to
-            contribute to real-world software projects while continuously learning
-            new technologies.
+          Entry-level Electronics & Telecommunication engineer with hands-on experience in embedded development, RF fundamentals, and data acquisition systems.
+          I’m drawn to problems where hardware meets software—optimizing signal chains, building reliable firmware, and translating requirements into robust, testable designs.
+          Seeking a role that values curiosity, clean engineering, and measurable impact.
         </p>
-    </section>
+      </section>
 
-    <section>
+      <section>
+        <h2>Contact information</h2>
+        <table class="list-table" aria-label="Contact">
+          <tr><td>Email</td><td><a href="mailto:sonali.patekar@example.com">sonali.patekar@example.com</a></td></tr>
+          <tr><td>Phone</td><td><a href="tel:+91-00000-00000">+91 00000 00000</a></td></tr>
+          <tr><td>Location</td><td>Thane, Maharashtra, India</td></tr>
+          <tr><td>GitHub</td><td><a href="https://github.com/sonali-patekar" target="_blank" rel="noopener">github.com/sonali-patekar</a></td></tr>
+          <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/sonali-patekar" target="_blank" rel="noopener">linkedin.com/in/sonali-patekar</a></td></tr>
+          <tr><td>Portfolio</td><td><a href="#" target="_blank" rel="noopener">sonalipatekar.dev</a></td></tr>
+        </table>
+      </section>
+
+      <section>
         <h2>Education</h2>
-        <div class="item">
-            <h3>Bachelor of Engineering (electronics and telecommunication Engineering)</h3>
-            <span>XYZ College of Engineering | 2021 – 2025</span>
-            <p>CGPA: 8.2 / 10</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Technical Skills</h2>
-        <div class="skills">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Python</span>
-            <span>Java</span>
-            <span>SQL</span>
-            <span>Git & GitHub</span>
-        </div>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <div class="item">
-            <h3>Online Resume Website</h3>
-            <span>HTML, CSS, GitHub Pages</span>
-            <p>
-                Designed and developed a personal resume website hosted on GitHub Pages
-                to showcase skills and projects.
-            </p>
-        </div>
-
-        <div class="item">
-            <h3>Student Management System</h3>
-            <span>Python, MySQL</span>
-            <p>
-                Developed a database-driven application for managing student records
-                including add, update, delete, and search functionality.
-            </p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Internship / Experience</h2>
-        <div class="item">
-            <h3>Software Development Intern</h3>
-            <span>ABC Tech Solutions | June 2024 – August 2024</span>
+        <div class="timeline">
+          <div class="item">
+            <h3>B.E. in Electronics & Telecommunication</h3>
+            <div class="when">2023–2027 (expected) • Mumbai University</div>
+            <p class="meta">Relevant coursework: Signals & Systems, Digital Communication, Microcontrollers, VLSI, Control Systems, Antennas, Embedded C, Data Networks.</p>
             <ul>
-                <li>Worked on frontend development using HTML, CSS, and JavaScript</li>
-                <li>Assisted in debugging and improving application performance</li>
-                <li>Used GitHub for version control and team collaboration</li>
+              <li><strong>CGPA:</strong> 8.4/10 (current)</li>
+              <li><strong>Senior Design Focus:</strong> Low-power IoT sensor node with BLE and edge filtering.</li>
             </ul>
+          </div>
+          <div class="item">
+            <h3>HSC (Science)</h3>
+            <div class="when">2021–2023 • Maharashtra State Board</div>
+            <p class="meta">Physics, Chemistry, Mathematics, Electronics.</p>
+          </div>
+          <div class="item">
+            <h3>SSC</h3>
+            <div class="when">2010–2021 • Maharashtra State Board</div>
+            <p class="meta">Distinction; school robotics club volunteer.</p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section>
-        <h2>Certifications</h2>
-        <ul>
-            <li>Web Development Certification</li>
-            <li>Python Programming Certification</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Personal Details</h2>
-        <ul>
-            <li>Date of Birth: 15/12/2005</li>
-            <li>Languages Known: English, Hindi, Marathi</li>
-            <li>Location: Maharashtra, India</li>
-        </ul>
-    </section>
-
-    <footer>
-        © 2026 Sonali Patekar
-    </footer>
-</div>
-
-</body>
-</html>
+      <section>
+        <h2>Technical skills</h2>
+        <div class="two-col">
+          <div>
+            <h3>Core</h3>
+            <ul>
+              <li><strong>Embedded:</strong> C/C++, ARM Cortex-M, AVR, ESP32, FreeRTOS basics</li>
+              <li><strong>Digital & RF:</strong
